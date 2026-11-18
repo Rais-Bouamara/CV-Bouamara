@@ -462,11 +462,41 @@
         display: inline-flex;
         gap: 7px;
         align-items: center;
-        margin-top: 11px;
+        margin-top: 0;
         color: var(--blue-dark);
         font-size: 12px;
         font-weight: 750;
         overflow-wrap: anywhere;
+      }
+
+      .portfolio-links {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+      }
+
+      .portfolio-qr {
+        display: grid;
+        flex: 0 0 auto;
+        justify-items: center;
+        gap: 4px;
+        color: var(--blue-dark);
+        font-size: 10px;
+        font-weight: 650;
+        line-height: 1.3;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .portfolio-qr img {
+        display: block;
+        width: 72px;
+        height: 72px;
+        padding: 3px;
+        background: #fff;
+        border-radius: 2px;
       }
 
       .skills-grid {
@@ -1342,8 +1372,20 @@
         }
 
         .project-link,
+        .portfolio-qr,
         .footer a {
           color: #2443c7;
+        }
+
+        .portfolio-qr {
+          gap: 2px;
+          font-size: 7pt;
+        }
+
+        .portfolio-qr img {
+          width: 20mm;
+          height: 20mm;
+          padding: 1mm;
         }
 
         .contact-strip {
@@ -1621,13 +1663,23 @@
             <article class="project-card" data-reveal>
               <h3>Portfolio personnel</h3>
               <p>Présentation de projets web personnels en ligne.</p>
-              <a
-                class="project-link"
-                href="https://rais-bouamara.github.io/PortFolioV2/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visiter le portfolio personnel de Bouamara Raïs, ouvre un nouvel onglet"
-              >rais-bouamara.github.io/PortFolioV2/ <span aria-hidden="true">↗</span></a>
+              <div class="portfolio-links">
+                <a
+                  class="project-link"
+                  href="https://rais-bouamara.github.io/PortFolioV2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >rais-bouamara.github.io/PortFolioV2/ <span aria-hidden="true">↗</span></a>
+                <a
+                  class="portfolio-qr"
+                  href="https://rais-bouamara.github.io/PortFolioV2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="portfolio-qr.svg" alt="Code QR vers le portfolio de Bouamara Raïs">
+                  <span>Scanner le portfolio</span>
+                </a>
+              </div>
             </article>
           </section>
 
