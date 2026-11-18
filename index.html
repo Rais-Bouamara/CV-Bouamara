@@ -499,6 +499,10 @@
         border-radius: 2px;
       }
 
+      .cv-site-qr {
+        display: none;
+      }
+
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1388,6 +1392,26 @@
           padding: 1mm;
         }
 
+        .cv-site-qr {
+          display: inline-flex;
+          gap: 5px;
+          align-items: center;
+          margin-left: auto;
+          color: #2443c7;
+          font-size: 7pt;
+          font-weight: 650;
+          line-height: 1.3;
+          text-decoration: none;
+        }
+
+        .cv-site-qr img {
+          display: block;
+          width: 20mm;
+          height: 20mm;
+          padding: 1mm;
+          background: #fff;
+        }
+
         .contact-strip {
           gap: 6px 18px;
           padding: 10px 30px;
@@ -1712,6 +1736,14 @@
       <footer class="footer">
         <span>Bouamara Raïs · Candidature BTS SIO SISR</span>
         <a href="mailto:rais.bouamara@gmail.com">rais.bouamara@gmail.com</a>
+        <a
+          class="cv-site-qr"
+          href="https://rais-bouamara.github.io/CV-Bouamara/"
+          aria-label="Ouvrir le CV en ligne"
+        >
+          <img src="cv-site-qr.svg" alt="Code QR vers le CV en ligne de Bouamara Raïs">
+          <span>CV en ligne<br>rais-bouamara.github.io/CV-Bouamara/</span>
+        </a>
       </footer>
     </main>
     <script>
