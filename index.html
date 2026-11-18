@@ -1219,7 +1219,7 @@
       @media print {
         @page {
           size: A4;
-          margin: 10mm;
+          margin: 5mm;
         }
 
         :root {
@@ -1237,7 +1237,7 @@
         body {
           color: #172235;
           background: #fff;
-          font-size: 9pt;
+          font-size: 7.5pt;
           print-color-adjust: exact;
           -webkit-print-color-adjust: exact;
         }
@@ -1264,7 +1264,7 @@
         }
 
         .hero {
-          padding: 22px 24px;
+          padding: 12px 20px;
           color: #172235;
           background: #fff;
           border-bottom: 1px solid #e2e7ef;
@@ -1276,7 +1276,8 @@
 
         h1 {
           color: #172235;
-          font-size: 32pt;
+          margin-bottom: 5px;
+          font-size: 24pt;
         }
 
         .typed-name {
@@ -1286,14 +1287,17 @@
         }
 
         .hero-title {
+          margin-bottom: 7px;
           color: #2443c7;
-          font-size: 12pt;
+          font-size: 10pt;
         }
 
         .hero-intro {
           color: #44516a;
-          margin-bottom: 14px;
-          font-size: 9pt;
+          max-width: none;
+          margin-bottom: 8px;
+          font-size: 7.5pt;
+          line-height: 1.45;
         }
 
         .hero-intro strong {
@@ -1306,27 +1310,34 @@
 
         .hero-aside {
           grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: 10px;
-          margin-top: 18px;
-          padding-top: 12px;
+          gap: 6px;
+          max-width: none;
+          margin-top: 8px;
+          padding-top: 6px;
           border-top: 1px solid #e2e7ef;
           background: #fff;
         }
 
         .availability {
+          margin-bottom: 0;
+          font-size: 8pt;
           color: #2443c7;
         }
 
         .aside-label {
+          margin-bottom: 1px;
           color: #647087;
+          font-size: 7pt;
         }
 
         .aside-value {
+          font-size: 8pt;
           color: #172235;
         }
 
         .contact-strip {
           background: #f9faff;
+          padding: 5px 16px;
         }
 
         .contact-strip a,
@@ -1394,11 +1405,11 @@
 
         .cv-site-qr {
           display: inline-flex;
-          gap: 5px;
+          gap: 4px;
           align-items: center;
           margin-left: auto;
           color: #2443c7;
-          font-size: 7pt;
+          font-size: 6pt;
           font-weight: 650;
           line-height: 1.3;
           text-decoration: none;
@@ -1419,47 +1430,157 @@
 
         .contact-strip a,
         .contact-location {
-          font-size: 8pt;
+          font-size: 7pt;
         }
 
         .content {
-          padding: 24px 30px;
+          padding: 7px 18px;
         }
 
         .section {
-          margin-bottom: 23px;
+          margin-bottom: 7px;
           break-inside: avoid;
         }
 
         .section-heading {
-          margin-bottom: 12px;
+          gap: 7px;
+          margin-bottom: 5px;
+        }
+
+        .section-heading h2 {
+          font-size: 9pt;
+        }
+
+        .section-heading p {
+          display: none;
+        }
+
+        .section-mark {
+          font-size: 8pt;
+        }
+
+        .profile-copy {
+          margin-left: 0;
+          font-size: 7.5pt;
+          line-height: 1.45;
         }
 
         .two-column {
-          gap: 20px;
+          gap: 12px;
         }
 
         .timeline {
-          gap: 13px;
+          gap: 6px;
+          margin-left: 8px;
+          padding-left: 16px;
+        }
+
+        .timeline-item::before {
+          left: -21px;
+          width: 8px;
+          height: 8px;
+        }
+
+        .item-topline {
+          gap: 2px 6px;
+          margin-bottom: 0;
+        }
+
+        .item-title {
+          font-size: 8pt;
+        }
+
+        .item-date,
+        .item-place {
+          font-size: 7pt;
+        }
+
+        .item-place {
+          margin-bottom: 2px;
         }
 
         .item-copy,
         .project-card p {
-          font-size: 8pt;
+          font-size: 7pt;
+          line-height: 1.4;
         }
 
         .project-card {
-          padding: 12px 14px;
+          margin-left: 8px;
+          padding: 4px 8px;
+        }
+
+        .project-card + .project-card {
+          margin-top: 3px;
+        }
+
+        .project-card h3,
+        .skill-group h3 {
+          margin-bottom: 2px;
+          font-size: 7.5pt;
+        }
+
+        .portfolio-links {
+          gap: 5px;
+          margin-top: 5px;
+        }
+
+        .project-link {
+          font-size: 6.5pt;
+        }
+
+        .portfolio-qr {
+          gap: 1px;
+          font-size: 6pt;
         }
 
         .skill-group {
-          padding: 13px;
+          padding: 7px;
+        }
+
+        .skills-grid {
+          gap: 6px;
+        }
+
+        .tag-list {
+          gap: 3px;
+        }
+
+        .tag-list li {
+          padding: 2px 4px;
+          font-size: 6.5pt;
+        }
+
+        .language-row {
+          gap: 5px;
+          margin-left: 0;
+        }
+
+        .language {
+          padding: 5px 7px;
+        }
+
+        .language strong,
+        .language span {
+          font-size: 7pt;
+        }
+
+        .portfolio-qr img,
+        .cv-site-qr img {
+          width: 15mm;
+          height: 15mm;
+          padding: 0.5mm;
         }
 
         .footer {
           color: #79849a;
-          padding: 10px 30px;
+          gap: 5px 12px;
+          padding: 2px 18px;
           background: #f9faff;
+        }
+
+        .cv-site-qr span {
+          white-space: nowrap;
         }
 
         a {
@@ -1742,7 +1863,7 @@
           aria-label="Ouvrir le CV en ligne"
         >
           <img src="cv-site-qr.svg" alt="Code QR vers le CV en ligne de Bouamara Raïs">
-          <span>CV en ligne<br>rais-bouamara.github.io/CV-Bouamara/</span>
+          <span>CV en ligne · rais-bouamara.github.io/CV-Bouamara/</span>
         </a>
       </footer>
     </main>
@@ -1755,6 +1876,10 @@
         const name = document.querySelector(".typed-name");
 
         document.body.classList.add("has-js");
+
+        window.addEventListener("beforeprint", () => {
+          name.textContent = name.getAttribute("data-full-name") || name.textContent;
+        });
 
         if (prefersReducedMotion) {
           revealItems.forEach((item) => item.classList.add("visible"));
@@ -1781,6 +1906,7 @@
 
         let typedLength = 0;
         const fullName = name.textContent;
+        name.dataset.fullName = fullName;
 
         function typeNextCharacter() {
           typedLength += 1;
